@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <h1>Shopping Cart Example</h1>
+    <hr>
+    <h2>products</h2>
+    <product-list></product-list>
+    <hr>
+    <cart></cart>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import ProductList from '@/components/ProductList'
+import Cart from '@/components/Cart'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ProductList,
+    Cart
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
